@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="staticblog.css">
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: skyblue;
+    padding: 10px 0;
+}
+
+h2.header {
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+    padding: 10px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar .nav-right1 {
+    margin-left: auto;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+#navbar a:hover {
+    background-color: #d0e8f2;
+}
+
+.content-box {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+}
+
+.article-content {
+    width: 100%;
+}
+
+.read-more-btn {
+    background-color: skyblue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.read-more-btn:hover {
+    background-color: #d0e8f2;
+}
+
+.flex-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 960px) {
+    .flex-item {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media (min-width: 960px) {
+    .flex-item {
+        flex-basis: calc(25% - 30px);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: skyblue;
+    color: #333;
+}</style>
+</head>
+
+<body>
+    <header>
+        <h2 class="header">我的博客</h2>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#article">文章</a></li>
+                <li><a href="#video">视频</a></li>
+                <li><a href="#more">关于我</a></li>
+                <li><a href="#contact">联系方式</a></li>
+                <li class="nav-right1"><a href="#">登录</a></li>
+                <li class="nav-right2"><a href="#">退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1 id="home">欢迎来到我的博客</h1>
+        </section>
+
+        <section id="articles" class="content-box">
+            <h2 id="article">文章</h2>
+            <div class="flex-container">
+                <article class="flex-item article">
+                    什么是 HTML？
+                    <button class="read-more-btn">阅读更多</button>
+                </article>
+                <article class="flex-item article">
+                    基本的 HTML 标签
+                    <button class="read-more-btn">阅读更多</button>
+                </article>
+                <article class="flex-item article">
+                    HTML 标签可以拥有属性。
+                    <button class="read-more-btn">阅读更多</button>
+                </article>
+                <article class="flex-item article">
+                    HTML 的 style 属性
+                    <button class="read-more-btn">阅读更多</button>
+                </article>
+                <article class="flex-item article">
+                    HTML 颜色,颜色名
+                    <button class="read-more-btn">阅读更多</button>
+                </article>
+                <article class="flex-item article">
+                    图像标签img和源属性Src
+                    <button class="read-more-btn">阅读更多</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="videos" class="content-box">
+            <h2 id="video">视频</h2>
+            <div class="flex-container">
+                <video class="flex-item" controls
+                    poster="https://7n.w3cschool.cn/attachments/image/202303/big_99988_1109798.png?t=1678098415">
+                    <source src="D:\OneDrive\Desktop\desktop\video\start.mp4">
+                </video>
+                <video class="flex-item" controls
+                    poster=https://atts.w3cschool.cn/attachments/cover/cover_uwymr.png?t=1715682163>
+                    <source src="D:\OneDrive\Desktop\desktop\video\start.mp4">
+                </video>
+                <video class="flex-item" controls
+                    poster=https://atts.w3cschool.cn/attachments/cover/cover_vrcgi.png?t=1681802753>
+                    <source src="D:\OneDrive\Desktop\desktop\video\start.mp4">
+                </video>
+                <video class="flex-item" controls
+                    poster=https://atts.w3cschool.cn/attachments/cover/cover_csscourse.png?t=1678154613>
+                    <source src="D:\OneDrive\Desktop\desktop\video\start.mp4">
+                </video>
+                <video class="flex-item" controls
+                    poster=https://atts.w3cschool.cn/attachments/cover/cover_htmlcourse.png?t=1705646411>
+                    <source src="D:\OneDrive\Desktop\desktop\video\start.mp4">
+                </video>
+                <video class="flex-item" controls
+                    poster=https://atts.w3cschool.cn/attachments/cover/cover_jscourse.png?t=1678154932>
+                    <source src="D:\OneDrive\Desktop\desktop\video\start.mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 id="more">关于我</h2>
+            <p>欢迎来到我的个人博客！我是一名对技术充满热情的开发者，专注于前端开发和用户体验设计。自从大学时期第一次接触到编程，我就被这个能够创造出无限可能的世界深深吸引。
+                在这里，我分享我的编程知识、项目经验以及对最新技术趋势的看法。我相信通过不断学习和实践，我们能够共同成长。
+                除了编程，我还热爱摄影和旅行，这让我能够保持生活的平衡和创造力的源泉。感谢你的访问，希望你能在我的博客中找到有价值的信息。
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2 id="contact">联系方式</h2>
+            <p>如果你对我的分享有任何疑问，或者想要进一步交流技术经验，欢迎通过以下方式联系我。我通常在线，会尽快回复你的信息。<br>
+
+                电子邮件：email@xxxxx.com。<br>
+                社交媒体：你可以通过我的LinkedIn和Twitter找到我，我的用户名是@usernamexxxxx。<br>
+                即时通讯：如果你喜欢即时通讯，可以通过微信或QQ联系我，我的账号是account_numberxxxxx。<br>
+                博客留言：你也可以直接在我的博客文章下方留言，我会定期查看并回复。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>版权所有 &copy; 2024 个人博客</p>
+    </footer>
+</body>
+
+
+<script>
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+    readMoreButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+            const articleUrls = [
+                'https://www.w3school.com.cn/html/index.asp',
+                'https://www.w3school.com.cn/html/html_basic.asp',
+                'https://www.w3school.com.cn/html/html_attributes.asp',
+                'https://www.w3school.com.cn/html/html_styles.asp',
+                'https://www.w3school.com.cn/html/html_colors.asp',
+                'https://www.w3school.com.cn/html/html_images.asp'
+            ];
+            window.location.href = articleUrls[index];
+        });
+    });
+</script>
+
+
+</html>
